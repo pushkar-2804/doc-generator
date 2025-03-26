@@ -9,3 +9,14 @@ export interface DocumentCreationReq {
   documentType: DocumentType
   watermark?: string
 }
+
+export interface ExtractedElement {
+  text: string | null
+  bold: boolean
+  italics: boolean
+  color: string | null
+  fontSize: number
+  fontFamily: string
+  textAlign: string
+  tag: string
+}
