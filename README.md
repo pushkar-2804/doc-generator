@@ -50,15 +50,15 @@ This service follows a versioned API structure to ensure backward compatibility.
 
 All endpoints are prefixed with /api/v1/.
 
-### **POST /api/v1/generate-document**
+### **POST /api/v1/doc/create-doc**
 #### Request Body:
 ```json
 {
-  "content": "<p>Your document content</p>",
-  "header": "<h1>Header</h1>",
-  "footer": "<footer>Footer</footer>",
-  "documentType": "pdf", // or "docx"
-  "watermark": "Confidential" // (optional, only for PDF)
+  "contentHtml": "<p>Your document content</p>",
+  "headerHtml": "<div style='text-align:center; font-size: 12px;'>My Company Header</div>",
+   "footerHtml": "<div style='text-align:center; font-size: 12px;'>Page Footer - Confidential</div>",
+    "documentType": "pdf",// or "docx",
+    "watermark": "DRAFT"
 }
 ```
 #### Response:
