@@ -56,9 +56,9 @@ All endpoints are prefixed with /api/v1/.
 {
   "contentHtml": "<p>Your document content</p>",
   "headerHtml": "<div style='text-align:center; font-size: 12px;'>My Company Header</div>",
-   "footerHtml": "<div style='text-align:center; font-size: 12px;'>Page Footer - Confidential</div>",
-    "documentType": "pdf",// or "docx",
-    "watermark": "DRAFT"
+  "footerHtml": "<div style='text-align:center; font-size: 12px;'>Page Footer - Confidential</div>",
+  "documentType": "pdf",// or "docx",
+  "watermark": "DRAFT"
 }
 ```
 #### Response:
